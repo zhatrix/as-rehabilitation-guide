@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Roboto_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 import { Navigation } from '@/components/layout/Navigation'
 import { Footer } from '@/components/layout/Footer'
 import './globals.css'
@@ -82,6 +83,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
+        <GoogleAnalytics />
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
