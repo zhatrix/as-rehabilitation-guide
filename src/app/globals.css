@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-primary text-body text-neutral-700 bg-neutral-0;
+  }
+
+  h1 {
+    @apply text-display text-neutral-900;
+  }
+
+  h2 {
+    @apply text-h2 text-neutral-800;
+  }
+
+  h3 {
+    @apply text-h3 text-neutral-800;
+  }
+
+  h4 {
+    @apply text-h4 text-neutral-700;
+  }
+
+  a {
+    @apply transition-colors duration-base;
+  }
+
+  /* Typography for MDX content */
+  .prose {
+    @apply max-w-none;
+  }
+
+  .prose h1 {
+    @apply text-display text-neutral-900 mb-md;
+  }
+
+  .prose h2 {
+    @apply text-h2 text-neutral-800 mt-xl mb-md;
+  }
+
+  .prose h3 {
+    @apply text-h3 text-neutral-800 mt-lg mb-sm;
+  }
+
+  .prose h4 {
+    @apply text-h4 text-neutral-700 mt-md mb-sm;
+  }
+
+  .prose p {
+    @apply text-body text-neutral-700 mb-sm;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply mb-sm ml-lg;
+  }
+
+  .prose li {
+    @apply mb-xs;
+  }
+
+  .prose strong {
+    @apply font-semibold text-neutral-900;
+  }
+
+  .prose a {
+    @apply text-primary-500 hover:text-primary-700 underline;
+  }
+
+  /* Table styles */
+  .prose table {
+    @apply w-full border-collapse mb-md;
+  }
+
+  .prose th {
+    @apply bg-neutral-100 text-neutral-900 font-semibold text-small uppercase tracking-wider p-sm text-left border border-neutral-300;
+  }
+
+  .prose td {
+    @apply p-sm border border-neutral-300 text-body text-neutral-700;
+  }
+
+  .prose tr:nth-child(even) {
+    @apply bg-neutral-0;
+  }
+
+  .prose tr:nth-child(odd) {
+    @apply bg-neutral-100/30;
+  }
+
+  /* Code blocks */
+  .prose code {
+    @apply font-code bg-neutral-100 px-1 py-0.5 rounded-sm text-small;
+  }
+
+  .prose pre {
+    @apply bg-neutral-800 text-neutral-0 p-md rounded-sm overflow-x-auto mb-md;
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
