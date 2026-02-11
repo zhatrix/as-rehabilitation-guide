@@ -10,9 +10,25 @@ export function Footer() {
           {/* About */}
           <div>
             <h3 className="text-h4 text-neutral-0 mb-sm">关于本站</h3>
-            <p className="text-small text-neutral-300">
+            <p className="text-small text-neutral-300 mb-sm">
               本网站提供强直性脊柱炎的权威医学知识与康复指导，包括病因机制、药物治疗和运动康复方案。
             </p>
+            <div className="text-small text-neutral-300 space-y-xs">
+              <p className="font-semibold text-primary-50">运动康复互助QQ群</p>
+              <p>
+                群号：<span className="font-code text-neutral-0">1034821769</span>
+              </p>
+              <p>
+                <a
+                  href="https://docs.qq.com/doc/p/a718982a7903bdce75e73abfddc2d61de749de42?nlc=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-50 hover:text-primary-500 underline transition-colors"
+                >
+                  查看群规 →
+                </a>
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}
