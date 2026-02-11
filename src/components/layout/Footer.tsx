@@ -1,7 +1,7 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-neutral-800 text-neutral-0 mt-3xl">
@@ -16,11 +16,14 @@ export function Footer() {
             <div className="text-small text-neutral-300 space-y-xs">
               <p className="font-semibold text-primary-50">运动康复互助QQ群</p>
               <p>
-                群号：<span className="font-code text-neutral-0">1034821769</span>
+                群号：
+                <span className="font-code text-neutral-0">1034821769</span>
+                进群验证码：
+                <span className="font-code text-neutral-0">运动康复互助</span>
               </p>
               <p>
                 <a
-                  href="https://docs.qq.com/doc/p/a718982a7903bdce75e73abfddc2d61de749de42?nlc=1"
+                  href="https://docs.qq.com/doc/DSkRSc2FDWFZUVXhK"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-50 hover:text-primary-500 underline transition-colors"
@@ -78,5 +81,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
